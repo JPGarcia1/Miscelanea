@@ -1,0 +1,15 @@
+C:\Users\Sena\source\repos\Miscelanea\obj\Debug\net6.0\Miscelanea.csproj.AssemblyReference.cache
+C:\Users\Sena\source\repos\Miscelanea\obj\Debug\net6.0\Miscelanea.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sena\source\repos\Miscelanea\obj\Debug\net6.0\Miscelanea.AssemblyInfoInputs.cache
+C:\Users\Sena\source\repos\Miscelanea\obj\Debug\net6.0\Miscelanea.AssemblyInfo.cs
+C:\Users\Sena\source\repos\Miscelanea\obj\Debug\net6.0\Miscelanea.csproj.CoreCompileInputs.cache
+C:\Users\Sena\source\repos\Miscelanea\bin\Debug\net6.0\Miscelanea.exe
+C:\Users\Sena\source\repos\Miscelanea\bin\Debug\net6.0\Miscelanea.deps.json
+C:\Users\Sena\source\repos\Miscelanea\bin\Debug\net6.0\Miscelanea.runtimeconfig.json
+C:\Users\Sena\source\repos\Miscelanea\bin\Debug\net6.0\Miscelanea.dll
+C:\Users\Sena\source\repos\Miscelanea\bin\Debug\net6.0\Miscelanea.pdb
+C:\Users\Sena\source\repos\Miscelanea\obj\Debug\net6.0\Miscelanea.dll
+C:\Users\Sena\source\repos\Miscelanea\obj\Debug\net6.0\refint\Miscelanea.dll
+C:\Users\Sena\source\repos\Miscelanea\obj\Debug\net6.0\Miscelanea.pdb
+C:\Users\Sena\source\repos\Miscelanea\obj\Debug\net6.0\Miscelanea.genruntimeconfig.cache
+C:\Users\Sena\source\repos\Miscelanea\obj\Debug\net6.0\ref\Miscelanea.dll
