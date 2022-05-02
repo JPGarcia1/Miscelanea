@@ -35,7 +35,7 @@ namespace LA_MISCELANEA_C
                         Ciclo3();
                         break;
                     case 4:
-                        
+                        Ciclo4();
                         break;
                     case 5:
                        
@@ -62,40 +62,41 @@ namespace LA_MISCELANEA_C
         }
         static void Ciclo1()
         {
-            Console.WriteLine("Multiplos de 3 desde el 1 al 100\n");
+            Console.WriteLine("Multiplos de 3 desde el 1 al 100");
 
             for (int i = 3; i <= 100; i *= 3)
             {
-                Console.WriteLine(i);
+                Console.WriteLine(i + "\n");
             }
-            Console.ReadKey();
         }
 
         static void Ciclo2()
         {
-            for (int i = 1; i <= 100; i += 1)
+            Console.WriteLine("Números impares desde 1 a 100\n");
+            for (int i = 1; i <= 100; i++)
             {
-                Console.WriteLine("Números impares desde 1 a 100\n"+i);
+                if(i % 2 != 0)
+                {
+                    Console.WriteLine(i + "\n");
+                }
             }
-            Console.ReadKey();
         }
 
         static void Ciclo3()
         {
+            Console.WriteLine("Números pares desde 1 a 100");
             for (int i = 2; i <= 100; i += 2)
             {
-                Console.WriteLine("Números pares desde 1 a 100\n" + i);
+                Console.WriteLine(i + "\n");
             }
-            Console.ReadKey();
         }
 
         static void Ciclo4()
         {
-            double resul;
-            Console.WriteLine("Ingrese el numero de euros que desea convertir");
-            double valor1 = Convert.ToDouble(Console.ReadLine());
-            resul = valor1 * 0.94;
-            Console.WriteLine("Euros = €" + valor1 + " Equivalen a $" + resul + " Dolares");
+            for (int i = 2; i <= 30; i *= i)
+            {
+                Console.WriteLine(i);
+            }
         }
 
         static void Ciclo5()
