@@ -261,17 +261,29 @@ namespace LA_MISCELANEA_C
                         break;
                     case 2:
                         Console.WriteLine();
+<<<<<<< HEAD
                         Punto2();
+=======
+                        SUMA();
+>>>>>>> 6c565a5c5fdbbdca2e139104488656791436511e
                         Console.WriteLine();
                         break;
                     case 3:
                         Console.WriteLine();
+<<<<<<< HEAD
                         Punto3();
+=======
+                        CUADRADO();
+>>>>>>> 6c565a5c5fdbbdca2e139104488656791436511e
                         Console.WriteLine();
                         break;
                     case 4:
                         Console.WriteLine();
+<<<<<<< HEAD
                         Punto4();
+=======
+                        CONVERSION();
+>>>>>>> 6c565a5c5fdbbdca2e139104488656791436511e
                         Console.WriteLine();
                         break;
                     case 5:
@@ -343,7 +355,11 @@ namespace LA_MISCELANEA_C
             int numeros = Convert.ToInt32(Console.ReadLine());
             for (int i = 1; i <= numeros; i++)
             {
+<<<<<<< HEAD
                 Console.WriteLine("Digite un número: ");
+=======
+                Console.WriteLine("Digite un numero: ");
+>>>>>>> 6c565a5c5fdbbdca2e139104488656791436511e
                 num = Convert.ToInt32(Console.ReadLine());
 
                 if (i == 1)
@@ -367,6 +383,7 @@ namespace LA_MISCELANEA_C
 
         static void Punto3()
         {
+<<<<<<< HEAD
             int ma = 0, me = 0, num = 0;
             Console.WriteLine("Ingrese 3 numeros enteros");
             for (int i = 1; i <= 3; i++)
@@ -389,10 +406,18 @@ namespace LA_MISCELANEA_C
 
             Console.WriteLine(" numero mayor es: " + ma);
             Console.WriteLine(" numero menor es: " + me);
+=======
+            double resul;
+            Console.WriteLine("Ingrese el numero");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+            resul = num1 * num1;
+            Console.WriteLine("El resultado es:" + resul);
+>>>>>>> 6c565a5c5fdbbdca2e139104488656791436511e
         }
 
         static void Punto4()
         {
+<<<<<<< HEAD
             int ma = 0, me = 0, num = 0;
             Console.WriteLine("Ingrese  numeros enteros");
             for (int i = 1; i <= 2; i++)
@@ -415,6 +440,13 @@ namespace LA_MISCELANEA_C
 
             Console.WriteLine(" numero mayor es: " + ma);
             Console.WriteLine(" numero menor es: " + me);
+=======
+            double resul;
+            Console.WriteLine("Ingrese el numero de euros que desea convertir");
+            double valor1 = Convert.ToDouble(Console.ReadLine());
+            resul = valor1 * 0.94;
+            Console.WriteLine("Euros = €" + valor1 + " Equivalen a $" + resul + " Dolares");
+>>>>>>> 6c565a5c5fdbbdca2e139104488656791436511e
         }
 
         static void Punto5()
