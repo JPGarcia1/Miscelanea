@@ -63,11 +63,6 @@ namespace LA_MISCELANEA_C
                         
                         Console.WriteLine();
                         break;
-                    case 8:
-                        Console.WriteLine();
-                        
-                        Console.WriteLine();
-                        break;
                     case 9:
                         Console.WriteLine("Saliendo del programa");
                         break;

@@ -34,43 +34,43 @@ namespace LA_MISCELANEA_C
                 {
                     case 1:
                         Console.WriteLine();
-                        TRIANGULO();
+                        triangulo();
                         Console.WriteLine();
 
                         break;
                     case 2:
                         Console.WriteLine();
-                        SUMA();
+                        suma();
                         Console.WriteLine();
                         break;
                     case 3:
                         Console.WriteLine();
-                        CUADRADO();
+                        cuadrado();
                         Console.WriteLine();
                         break;
                     case 4:
                         Console.WriteLine();
-                        CONVERSION();
+                        conversion();
                         Console.WriteLine();
                         break;
                     case 5:
                         Console.WriteLine();
-                        LADOS();
+                        lados();
                         Console.WriteLine();
                         break;
                     case 6:
                         Console.WriteLine();
-                        RADIO();
+                        radio();
                         Console.WriteLine();
                         break;
                     case 7:
                         Console.WriteLine();
-                        CIRCUNFERENCIA();
+                        circunferencia();
                         Console.WriteLine();
                         break;
                     case 8:
                         Console.WriteLine();
-                        PROMEDIO();
+                        promedio();
                         Console.WriteLine();
                         break;
                     case 9:
@@ -88,7 +88,7 @@ namespace LA_MISCELANEA_C
             Console.ReadKey();
         }
 
-        static void TRIANGULO()
+        static void triangulo()
         {
             double resul;
             Console.WriteLine("Ingrese la base del triangulo");
@@ -99,7 +99,7 @@ namespace LA_MISCELANEA_C
             Console.WriteLine("El resultado es:" + resul);
         }
 
-        static void SUMA()
+        static void suma()
         {
             double resul;
             Console.WriteLine("Ingrese el primer numero");
@@ -110,7 +110,7 @@ namespace LA_MISCELANEA_C
             Console.WriteLine("El resultado es:" + resul);
         }
 
-        static void CUADRADO()
+        static void cuadrado()
         {
             double resul;
             Console.WriteLine("Ingrese el numero");
@@ -119,7 +119,7 @@ namespace LA_MISCELANEA_C
             Console.WriteLine("El resultado es:" + resul);
         }
 
-        static void CONVERSION()
+        static void conversion()
         {
             double resul;
             Console.WriteLine("Ingrese el numero de euros que desea convertir");
@@ -128,7 +128,7 @@ namespace LA_MISCELANEA_C
             Console.WriteLine("Euros = €" + valor1 + " Equivalen a $" + resul + " Dolares");
         }
 
-        static void LADOS()
+        static void lados()
         {
             double resul1, resul2;
             Console.WriteLine("Ingrese un lado del cuadrado");
@@ -139,7 +139,7 @@ namespace LA_MISCELANEA_C
             Console.WriteLine("El perimetro del cuadrado es: " + resul2);
         }
 
-        static void RADIO()
+        static void radio()
         {
             double area, vol;
             Console.WriteLine("Ingrese el radio del cilindro");
@@ -152,7 +152,7 @@ namespace LA_MISCELANEA_C
             Console.WriteLine("El area del cilindro es: " + area);
         }
 
-        static void CIRCUNFERENCIA()
+        static void circunferencia()
         {
             Console.WriteLine("Ingrese el radio del circulo");
             double radio = Convert.ToDouble(Console.ReadLine());
@@ -162,7 +162,7 @@ namespace LA_MISCELANEA_C
             Console.WriteLine("El area del circulo es: " + area);
         }
 
-        static void PROMEDIO()
+        static void promedio()
         {
             double resul1;
             Console.WriteLine("Ingrese el primer numero");
