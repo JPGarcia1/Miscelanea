@@ -101,7 +101,7 @@ namespace LA_MISCELANEA_C
             }
             catch (Exception tri)
             {
-                Console.WriteLine("Error en el dato ingresado");
+                Console.WriteLine("EL DATO INGRESADO ES ERRONEO);
                 Console.WriteLine(tri.Message);
             }
         }
@@ -120,7 +120,7 @@ namespace LA_MISCELANEA_C
             }
             catch(Exception suma)
             {
-                Console.WriteLine();
+                Console.WriteLine("EL DATO INGRESADO ES ERRONEO");
                 Console.WriteLine(suma.Message);
             }
         }
@@ -137,7 +137,7 @@ namespace LA_MISCELANEA_C
             }
             catch (Exception cuadra)
             {
-                Console.WriteLine();
+                Console.WriteLine("EL DATO INGRESADO ES ERRONEO");
                 Console.WriteLine(cuadra.Message);
             }
         }    
@@ -154,7 +154,7 @@ namespace LA_MISCELANEA_C
             }
             catch(Exception conver)
             {
-                Console.WriteLine();
+                Console.WriteLine("EL DATO INGRESADO ES ERRONEO");
                 Console.WriteLine(conver.Message);
             }
         }
@@ -173,7 +173,7 @@ namespace LA_MISCELANEA_C
             }
             catch(Exception lad)
             {
-                Console.WriteLine();
+                Console.WriteLine("EL DATO INGRESADO ES ERRONEO");
                 Console.WriteLine(lad.Message);
             }
         }
@@ -194,7 +194,7 @@ namespace LA_MISCELANEA_C
             }
             catch(Exception rad)
             {
-                Console.WriteLine();
+                Console.WriteLine("EL DATO INGRESADO ES ERRONEO");
                 Console.WriteLine(rad.Message);
             }
         }
@@ -212,7 +212,7 @@ namespace LA_MISCELANEA_C
             }
             catch (Exception cir)
             {
-                Console.WriteLine();
+                Console.WriteLine("EL DATO INGRESADO ES ERRONEO");
                 Console.WriteLine(cir.Message);
             }
         }
@@ -233,7 +233,7 @@ namespace LA_MISCELANEA_C
             }
             catch(Exception pro)
             {
-                Console.WriteLine();
+                Console.WriteLine("EL DATO INGRESADO ES ERRONEO");
                 Console.WriteLine(pro.Message);
             }
         }
