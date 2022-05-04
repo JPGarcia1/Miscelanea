@@ -8,7 +8,7 @@ namespace LA_MISCELANEA_C
 {
     internal class Operadores
     {
-        public static void operadores()
+        public static void operadores(int num1, int num2, int num3, int num4)
         {
             int ElecOp;
 
@@ -101,7 +101,7 @@ namespace LA_MISCELANEA_C
             }
             catch (Exception tri)
             {
-                Console.WriteLine("EL DATO INGRESADO ES ERRONEO);
+                Console.WriteLine("EL DATO INGRESADO ES ERRONEO");
                 Console.WriteLine(tri.Message);
             }
         }

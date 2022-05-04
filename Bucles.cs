@@ -63,26 +63,26 @@ namespace LA_MISCELANEA_C
         }
         static void Ciclo1()
         {
-            Console.WriteLine("Multiplos de 3 desde el 1 al 100");
+                Console.WriteLine("Multiplos de 3 desde el 1 al 100");
 
-            for (int i = 3; i <= 100; i *= 3)
-            {
-                Console.Write(i);
-                Console.WriteLine("\n");
-            }
+                for (int i = 3; i <= 100; i *= 3)
+                {
+                    Console.Write(i);
+                    Console.WriteLine("\n");
+                }
         }
         static void Ciclo2()
         {
-            Console.WriteLine("Números impares desde 1 a 100\n");
-            for (int i = 1; i <= 100; i++)
-            {
-                if(i % 2 != 0)
-                {
-                    Console.Write(i);
-                    Console.Write("~");
-                }
-            }
-            Console.WriteLine("\n");
+             Console.WriteLine("Números impares desde 1 a 100\n");
+             for (int i = 1; i <= 100; i++)
+             {
+                 if (i % 2 != 0)
+                 {
+                     Console.Write(i);
+                     Console.Write("~");
+                 }
+             }
+             Console.WriteLine("\n");
         }
         static void Ciclo3()
         {
@@ -116,40 +116,54 @@ namespace LA_MISCELANEA_C
         }
         static void Ciclo6()
         {
-            Console.WriteLine("Ingrese el número menor");
-            int menor = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Ingrese el número mayor");
-            int mayor = Convert.ToInt32(Console.ReadLine());
-
-            if (menor < mayor)
+            try
             {
-                for (int i = menor; i <= mayor; i++)
+                Console.WriteLine("Ingrese el número menor");
+                int menor = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Ingrese el número mayor");
+                int mayor = Convert.ToInt32(Console.ReadLine());
+
+                if (menor < mayor)
                 {
-                    Console.WriteLine("\n" + i);
+                    for (int i = menor; i <= mayor; i++)
+                    {
+                        Console.WriteLine("\n" + i);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("\nPor favor ingrese bien el primer número menor");
                 }
             }
-            else
+            catch (Exception)
             {
-                Console.WriteLine("\nPor favor ingrese bien el primer número menor");
+                Console.WriteLine("El caracter ingresado es erroneo");
             }
         }
         static void Ciclo7()
         {
-            int x;
-            int sum = 0;
-
-            Console.WriteLine("Ingrese los numeros\nPresione 0 para cerrar la suma");
-            do
+            try
             {
-                x = Convert.ToInt32(Console.ReadLine());
-                sum = x + sum;
+                int x;
+                int sum = 0;
 
-                if (x != 0)
-                    Console.WriteLine(sum);
+                Console.WriteLine("Ingrese los numeros\nPresione 0 para cerrar la suma");
+                do
+                {
+                    x = Convert.ToInt32(Console.ReadLine());
+                    sum = x + sum;
+
+                    if (x != 0)
+                        Console.WriteLine(sum);
+                }
+                while (x != 0);
+
+                Console.WriteLine("Terminado");
             }
-            while (x != 0);
-
-            Console.WriteLine("Terminado");
+            catch(Exception)
+            {
+                Console.WriteLine("El caracter ingresado es erroneo");
+            }
         }
 
     }
