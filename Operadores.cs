@@ -8,8 +8,9 @@ namespace LA_MISCELANEA_C
 {
     internal class Operadores
     {
-        public static void operadores(int num1, int num2, int num3, int num4)
+        public void operadores()
         {
+            
             int ElecOp;
 
             do
@@ -26,9 +27,8 @@ namespace LA_MISCELANEA_C
                 Console.WriteLine(" 8. Promedio de tres numeros");
                 Console.WriteLine(" 9. SALIR");
 
-
-                ElecOp = Convert.ToInt32(Console.ReadLine());
-
+                    ElecOp = Convert.ToInt32(Console.ReadLine());
+                
                 switch (ElecOp)
                 {
                     case 1:
@@ -86,157 +86,141 @@ namespace LA_MISCELANEA_C
 
             Console.ReadKey();
         }
-
-        static void triangulo()
+        Variables variables = new Variables(0, 0, 0, 0);
+        public void triangulo()
         {
             try
             {
-                double resul;
                 Console.WriteLine("Ingrese la base del triangulo");
-                double bas = Convert.ToDouble(Console.ReadLine());
+                variables.dato1 = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Ingrese la altura del triangulo");
-                double alt = Convert.ToDouble(Console.ReadLine());
-                resul = (bas * alt) / 2;
-                Console.WriteLine("El resultado es:" + resul);
+                variables.dato2 = Convert.ToDouble(Console.ReadLine());
+                variables.dato3 = (variables.dato1 * variables.dato2) / 2;
+                Console.WriteLine("El resultado es:" + variables.dato3);
             }
-            catch (Exception tri)
+            catch (Exception)
             {
                 Console.WriteLine("EL DATO INGRESADO ES ERRONEO");
-                Console.WriteLine(tri.Message);
             }
         }
 
-        static void suma()
+        public void suma()
         {
             try
             {
-                double resul;
                 Console.WriteLine("Ingrese el primer numero");
-                double num1 = Convert.ToDouble(Console.ReadLine());
+                variables.dato2 = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Ingrese el segundo numero");
-                double num2 = Convert.ToDouble(Console.ReadLine());
-                resul = num1 + num2;
-                Console.WriteLine("El resultado es:" + resul);
+                variables.dato3 = Convert.ToDouble(Console.ReadLine());
+                variables.dato1 = variables.dato2 + variables.dato3;
+                Console.WriteLine("El resultado es:" + variables.dato1);
             }
-            catch(Exception suma)
+            catch(Exception)
             {
                 Console.WriteLine("EL DATO INGRESADO ES ERRONEO");
-                Console.WriteLine(suma.Message);
             }
         }
 
-        static void cuadrado()
+        public void cuadrado()
         {
             try
             {
-                double resul;
                 Console.WriteLine("Ingrese el numero");
-                double num1 = Convert.ToDouble(Console.ReadLine());
-                resul = num1 * num1;
-                Console.WriteLine("El resultado es:" + resul);
+                variables.dato1 = Convert.ToDouble(Console.ReadLine());
+                variables.dato2 = variables.dato1 * variables.dato1;
+                Console.WriteLine("El resultado es:" + variables.dato2);
             }
-            catch (Exception cuadra)
+            catch (Exception)
             {
                 Console.WriteLine("EL DATO INGRESADO ES ERRONEO");
-                Console.WriteLine(cuadra.Message);
             }
         }    
         
-        static void conversion()
+        public void conversion()
         {
             try
             {
-                double resul;
                 Console.WriteLine("Ingrese el numero de euros que desea convertir");
-                double valor1 = Convert.ToDouble(Console.ReadLine());
-                resul = valor1 * 0.94;
-                Console.WriteLine("Euros = €" + valor1 + " Equivalen a $" + resul + " Dolares");
+                variables.dato1 = Convert.ToDouble(Console.ReadLine());
+                variables.dato2 = variables.dato1 * 0.94;
+                Console.WriteLine("Euros = €" + variables.dato1 + " Equivalen a $" + variables.dato2 + " Dolares");
             }
-            catch(Exception conver)
+            catch(Exception)
             {
                 Console.WriteLine("EL DATO INGRESADO ES ERRONEO");
-                Console.WriteLine(conver.Message);
             }
         }
 
-        static void lados()
+        public void lados()
         {
             try
             {
-                double resul1, resul2;
                 Console.WriteLine("Ingrese un lado del cuadrado");
                 double lad = Convert.ToDouble(Console.ReadLine());
-                resul1 = Math.Pow(lad, 2);
-                resul2 = lad * 4;
-                Console.WriteLine("El area del cuadrado es: " + resul1);
-                Console.WriteLine("El perimetro del cuadrado es: " + resul2);
+                variables.dato1 = Math.Pow(lad, 2);
+                variables.dato2 = lad * 4;
+                Console.WriteLine("El area del cuadrado es: " + variables.dato1);
+                Console.WriteLine("El perimetro del cuadrado es: " + variables.dato2);
             }
-            catch(Exception lad)
+            catch(Exception)
             {
                 Console.WriteLine("EL DATO INGRESADO ES ERRONEO");
-                Console.WriteLine(lad.Message);
             }
         }
 
-        static void radio()
+        public void radio()
         {
             try
             {
-                double area, vol;
                 Console.WriteLine("Ingrese el radio del cilindro");
-                double rad = Convert.ToDouble(Console.ReadLine());
+                variables.dato1 = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Ingrese la altura del cilindro");
-                double altura = Convert.ToDouble(Console.ReadLine());
-                vol = Math.PI * Math.Pow(rad, 2) * altura;
-                area = (2 * (Math.PI) * rad * altura) + (2 * (Math.PI) * Math.Pow(rad, 2));
-                Console.WriteLine("El volumen del cilindro es: " + vol);
-                Console.WriteLine("El area del cilindro es: " + area);
+                variables.dato2 = Convert.ToDouble(Console.ReadLine());
+                variables.dato3 = Math.PI * Math.Pow(variables.dato1, 2) * variables.dato2;
+                variables.dato4 = (2 * (Math.PI) * variables.dato1 * variables.dato2) + (2 * (Math.PI) * Math.Pow(variables.dato1, 2));
+                Console.WriteLine("El volumen del cilindro es: " + variables.dato3);
+                Console.WriteLine("El area del cilindro es: " + variables.dato4);
             }
-            catch(Exception rad)
+            catch(Exception)
             {
                 Console.WriteLine("EL DATO INGRESADO ES ERRONEO");
-                Console.WriteLine(rad.Message);
             }
         }
 
-        static void circunferencia()
+        public void circunferencia()
         {
             try
             {
                 Console.WriteLine("Ingrese el radio del circulo");
-                double radio = Convert.ToDouble(Console.ReadLine());
-                double circu = 2 * Math.PI * radio;
-                double area = Math.PI * Math.Pow(radio, 2);
-                Console.WriteLine("La longitud de la circunferencia es: " + circu);
-                Console.WriteLine("El area del circulo es: " + area);
+                variables.dato1 = Convert.ToDouble(Console.ReadLine());
+                variables.dato2 = 2 * Math.PI * variables.dato1;
+                variables.dato3 = Math.PI * Math.Pow(variables.dato1, 2);
+                Console.WriteLine("La longitud de la circunferencia es: " + variables.dato2);
+                Console.WriteLine("El area del circulo es: " + variables.dato3);
             }
-            catch (Exception cir)
+            catch (Exception)
             {
                 Console.WriteLine("EL DATO INGRESADO ES ERRONEO");
-                Console.WriteLine(cir.Message);
             }
         }
 
-        static void promedio()
+        public void promedio()
         {
             try
             {
-                double resul1;
                 Console.WriteLine("Ingrese el primer numero");
-                double numero1 = Convert.ToDouble(Console.ReadLine());
+                variables.dato1 = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Ingrese el segundo numero");
-                double numero2 = Convert.ToDouble(Console.ReadLine());
+                variables.dato2 = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Ingrese el tercer numero");
-                double numero3 = Convert.ToDouble(Console.ReadLine());
-                resul1 = (numero1 + numero2 + numero3) / 3;
-                Console.WriteLine("El promedio de los tres numeros es: " + resul1);
+                variables.dato3 = Convert.ToDouble(Console.ReadLine());
+                variables.dato4 = (variables.dato1 + variables.dato2 + variables.dato3) / 3;
+                Console.WriteLine("El promedio de los tres numeros es: " + variables.dato4);
             }
-            catch(Exception pro)
+            catch(Exception)
             {
                 Console.WriteLine("EL DATO INGRESADO ES ERRONEO");
-                Console.WriteLine(pro.Message);
             }
         }
-        Operadores op = new Operadores();
     }
 }

@@ -8,9 +8,14 @@ namespace LA_MISCELANEA_C
 {
     internal class CLASE_MAIN
     {
-       public static void Main(string[] args)
+       static void Main(string[] args)
         {
             int Elec;
+
+            Operadores operadores = new Operadores();
+            Condicionales condicionales = new Condicionales();
+            Bucles bucles = new Bucles();
+            Arreglos arreglos = new Arreglos();
 
             do
             {
@@ -23,12 +28,11 @@ namespace LA_MISCELANEA_C
                 Console.WriteLine();
                 Elec = Convert.ToInt32(Console.ReadLine());
 
-
                 switch (Elec)
                 {
                     case 1:
                         {
-                            Operadores.operadores();
+                            operadores.operadores();
                         }
                         break;
 
