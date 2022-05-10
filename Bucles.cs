@@ -8,7 +8,7 @@ namespace LA_MISCELANEA_C
 {
     internal class Bucles
     {
-        public static void bucles()
+        public void bucles()
         {
             int ElecBu;
 
@@ -61,73 +61,73 @@ namespace LA_MISCELANEA_C
 
             Console.ReadKey();
         }
-        static void Ciclo1()
+        Variables variables = new Variables(0, 0, 0, 0, 0);
+        public void Ciclo1()
         {
                 Console.WriteLine("Multiplos de 3 desde el 1 al 100");
 
-                for (int i = 3; i <= 100; i *= 3)
+                for (variables.dato1 = 3; variables.dato1 <= 100; variables.dato1 *= 3)
                 {
-                    Console.Write(i);
+                    Console.Write(variables.dato1);
                     Console.WriteLine("\n");
                 }
         }
-        static void Ciclo2()
+        public void Ciclo2()
         {
              Console.WriteLine("Números impares desde 1 a 100\n");
-             for (int i = 1; i <= 100; i++)
+             for (variables.dato1 = 1; variables.dato1 <= 100; variables.dato1++)
              {
-                 if (i % 2 != 0)
+                 if (variables.dato1 % 2 != 0)
                  {
-                     Console.Write(i);
+                     Console.Write(variables.dato1);
                      Console.Write("~");
                  }
              }
              Console.WriteLine("\n");
         }
-        static void Ciclo3()
+        public void Ciclo3()
         {
             Console.WriteLine("Números pares desde 1 a 100");
-            for (int i = 1; i <= 100; i += 2)
+            for (variables.dato1 = 1; variables.dato1 <= 100; variables.dato1 += 2)
             {
-                Console.Write(i);
+                Console.Write(variables.dato1);
                 Console.Write("~");
             }
             Console.WriteLine("\n");
         }
-        static void Ciclo4()
+        public void Ciclo4()
         {
-            for (int i = 1; i <= 30; i++)
+            for (variables.dato1 = 1; variables.dato1 <= 30; variables.dato1++)
             {
-                Console.WriteLine("\nCuadrado del " + i + " : " + (i * i));
+                Console.WriteLine("\nCuadrado del " + variables.dato1 + " : " + (variables.dato1 * variables.dato1));
             }
         }
 
-        static void Ciclo5()
+        public void Ciclo5()
         {
-            int i, suma;
-            suma = 0;
-            for (i = 1; i <= 100; i++)
+            variables.dato1 = 0;
+            for (variables.dato2 = 1; variables.dato2 <= 100; variables.dato2++)
             {
-                Console.WriteLine("\nCuadrado del " + i + " : " + (i * i));
-                suma = suma + i * i;
+                Console.WriteLine("\nCuadrado del " + variables.dato2 + " : " + (variables.dato2 * variables.dato2));
+                variables.dato1 = variables.dato1 + variables.dato2 * variables.dato2;
                 Console.WriteLine();
             }
-            Console.WriteLine("TOTAL: " + suma + "\n");
+            Console.WriteLine("TOTAL: " + variables.dato1 + "\n");
         }
-        static void Ciclo6()
+        public void Ciclo6()
         {
             try
             {
                 Console.WriteLine("Ingrese el número menor");
-                int menor = Convert.ToInt32(Console.ReadLine());
+                variables.dato1 = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Ingrese el número mayor");
-                int mayor = Convert.ToInt32(Console.ReadLine());
+                variables.dato2 = Convert.ToInt32(Console.ReadLine());
 
-                if (menor < mayor)
+                if (variables.dato1 < variables.dato2)
                 {
-                    for (int i = menor; i <= mayor; i++)
+                    for (variables.dato3 = variables.dato1; variables.dato3 <= variables.dato2; variables.dato3++)
                     {
-                        Console.WriteLine("\n" + i);
+                        Console.WriteLine("\n" + variables.dato3);
                     }
                 }
                 else
@@ -140,23 +140,20 @@ namespace LA_MISCELANEA_C
                 Console.WriteLine("El caracter ingresado es erroneo");
             }
         }
-        static void Ciclo7()
+        public void Ciclo7()
         {
             try
             {
-                int x;
-                int sum = 0;
-
                 Console.WriteLine("Ingrese los numeros\nPresione 0 para cerrar la suma");
                 do
                 {
-                    x = Convert.ToInt32(Console.ReadLine());
-                    sum = x + sum;
+                    variables.dato1 = Convert.ToInt32(Console.ReadLine());
+                    variables.dato2 = variables.dato1 + variables.dato2;
 
-                    if (x != 0)
-                        Console.WriteLine(sum);
+                    if (variables.dato1 != 0)
+                        Console.WriteLine(variables.dato2);
                 }
-                while (x != 0);
+                while (variables.dato1 != 0);
 
                 Console.WriteLine("Terminado");
             }

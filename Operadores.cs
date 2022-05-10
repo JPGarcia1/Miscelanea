@@ -86,7 +86,7 @@ namespace LA_MISCELANEA_C
 
             Console.ReadKey();
         }
-        Variables variables = new Variables(0, 0, 0, 0);
+        Variables variables = new Variables(0, 0, 0, 0, 0);
         public void triangulo()
         {
             try

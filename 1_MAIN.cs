@@ -38,13 +38,13 @@ namespace LA_MISCELANEA_C
 
                     case 2:
                         {
-                            Condicionales.condicionales();
+                            condicionales.condicionales();
                         }
                         break;
 
                     case 3:
                         {
-                            Bucles.bucles();
+                            bucles.bucles();
                         }
                         break;
 

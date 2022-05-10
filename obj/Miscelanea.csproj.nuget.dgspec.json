@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sena\\source\\repos\\Miscelanea\\Miscelanea.csproj": {}
+    "C:\\Users\\Sena\\Source\\Repos\\JPGarcia1\\Miscelanea\\Miscelanea.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sena\\source\\repos\\Miscelanea\\Miscelanea.csproj": {
+    "C:\\Users\\Sena\\Source\\Repos\\JPGarcia1\\Miscelanea\\Miscelanea.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sena\\source\\repos\\Miscelanea\\Miscelanea.csproj",
+        "projectUniqueName": "C:\\Users\\Sena\\Source\\Repos\\JPGarcia1\\Miscelanea\\Miscelanea.csproj",
         "projectName": "Miscelanea",
-        "projectPath": "C:\\Users\\Sena\\source\\repos\\Miscelanea\\Miscelanea.csproj",
+        "projectPath": "C:\\Users\\Sena\\Source\\Repos\\JPGarcia1\\Miscelanea\\Miscelanea.csproj",
         "packagesPath": "C:\\Users\\Sena\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sena\\source\\repos\\Miscelanea\\obj\\",
+        "outputPath": "C:\\Users\\Sena\\Source\\Repos\\JPGarcia1\\Miscelanea\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\Sena\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
