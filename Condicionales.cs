@@ -64,7 +64,7 @@ namespace LA_MISCELANEA_C
                         Console.WriteLine();
                         break;
                     case 9:
-                        Console.WriteLine("Saliendo del programa");
+                        Console.WriteLine("Saliendo de condicionales");
                         break;
                     default:
                         {
@@ -80,81 +80,94 @@ namespace LA_MISCELANEA_C
         Variables variables = new Variables(0, 0, 0, 0, 0);
         public void Punto1()
         {
-            Console.Write("Ingrese número:");
-            variables.dato1 = Convert.ToInt32(Console.ReadLine());
-
-            if (variables.dato1 == 0)
+            try
             {
-                Console.Write("El numero digitado {0} es cero", variables.dato1);
+                Console.Write("Ingrese número:");
+                variables.dato1 = Convert.ToInt32(Console.ReadLine());
+
+                if (variables.dato1 == 0)
+                {
+                    Console.Write("El numero digitado {0} es cero", variables.dato1);
+                }
+
+
+                if (variables.dato1 > 0)
+                {
+                    Console.Write("El numero {0} es positivo", variables.dato1);
+                }
+
+                if (variables.dato1 < 0)
+                {
+                    Console.Write("El numero {0} es negativo", variables.dato1);
+                }
+
+                Console.ReadKey();
             }
-
-
-            if (variables.dato1 > 0)
+            catch (Exception)
             {
-                Console.Write("El numero {0} es positivo", variables.dato1);
+            Console.WriteLine("Ingrese un valor que sea correcto");
             }
-
-            if (variables.dato1 < 0)
-            {
-                Console.Write("El numero {0} es negativo", variables.dato1);
-            }
-
-            Console.ReadKey();
         }
-
-
         public void Punto2()
         {
-            Console.WriteLine("Cuantos numeros va ingresar");
-            variables.dato1 = Convert.ToInt32(Console.ReadLine());
-            for (int i = 1; i <= variables.dato1; i++)
+            try
             {
-                Console.WriteLine("Digite un número: ");
-                variables.dato2 = Convert.ToInt32(Console.ReadLine());
-
-                if (i == 1)
+                Console.WriteLine("Cuantos numeros va ingresar");
+                variables.dato1 = Convert.ToInt32(Console.ReadLine());
+                for (int i = 1; i <= variables.dato1; i++)
                 {
-                    variables.dato3 = variables.dato2;
-                    variables.dato4 = variables.dato2;
+                    Console.WriteLine("Digite un número: ");
+                    variables.dato2 = Convert.ToInt32(Console.ReadLine());
+
+                    if (i == 1)
+                    {
+                        variables.dato3 = variables.dato2;
+                        variables.dato4 = variables.dato2;
+                    }
+                    if (variables.dato2 > variables.dato3) { variables.dato3 = variables.dato2; }
+                    if (variables.dato2 < variables.dato4) { variables.dato4 = variables.dato2; }
+
+                    variables.dato2 = 0;
                 }
-                if (variables.dato2 > variables.dato3) { variables.dato3 = variables.dato2; }
-                if (variables.dato2 < variables.dato4) { variables.dato4 = variables.dato2; }
-
-
-
-                variables.dato2 = 0;
+                Console.WriteLine(" numero mayor es: " + variables.dato3);
+                Console.WriteLine(" numero menor es: " + variables.dato4);
             }
-
-            Console.WriteLine(" numero mayor es: " + variables.dato3);
-            Console.WriteLine(" numero menor es: " + variables.dato4);
-
+            catch (Exception)
+            {
+                Console.WriteLine("Ingrese un valor que sea correcto");
+            }
         }
-
-
         public void Punto3()
         {
-            int ma = 0, me = 0, num = 0;
-            Console.WriteLine("Ingrese 3 numeros enteros");
-            for (int i = 1; i <= 3; i++)
+            try
             {
-                Console.WriteLine("Digite el número " + i + ":");
-                num = Convert.ToInt32(Console.ReadLine());
-
-                if (i == 1)
+                int ma = 0, me = 0, num = 0;
+                Console.WriteLine("Ingrese 3 numeros enteros");
+                for (int i = 1; i <= 3; i++)
                 {
-                    ma = num;
-                    me = num;
+                    Console.WriteLine("Digite el número " + i + ":");
+                    num = Convert.ToInt32(Console.ReadLine());
+
+                    if (i == 1)
+                    {
+                        ma = num;
+                        me = num;
+                    }
+                    if (num > ma) { ma = num; }
+                    if (num < me) { me = num; }
+
+
+
+                    num = 0;
                 }
-                if (num > ma) { ma = num; }
-                if (num < me) { me = num; }
 
-
-
-                num = 0;
+                Console.WriteLine(" numero mayor es: " + ma);
+                Console.WriteLine(" numero menor es: " + me);
             }
-
-            Console.WriteLine(" numero mayor es: " + ma);
-            Console.WriteLine(" numero menor es: " + me);
+            catch (Exception)
+            {
+                Console.WriteLine("Ingrese un valor que sea correcto");
+            }
         }
         public void Punto4()
         {
@@ -177,12 +190,9 @@ namespace LA_MISCELANEA_C
             }
             catch (FormatException)
             {
-                Console.WriteLine("ALGO HA SALIDO MAL ");
+                Console.WriteLine("Ingrese un valor que sea correcto");
             }
-
-
         }
-
         public void Punto5()
         {
             try
@@ -205,9 +215,7 @@ namespace LA_MISCELANEA_C
             {
                 Console.WriteLine("Ingrese un valor que sea correcto");
             }
-
         }
-
         public void Punto6()
         {
             try
@@ -227,14 +235,11 @@ namespace LA_MISCELANEA_C
                     Console.WriteLine($"{variables.dato1} * {variables.dato2} = {variables.dato3}");
                 }
             }
-            catch (FormatException)
+            catch (Exception)
             {
                 Console.WriteLine("Ingrese un valor correcto");
-                Console.ReadKey();
             }
-
         }
-
         public void Punto7()
         {
             try
@@ -251,8 +256,9 @@ namespace LA_MISCELANEA_C
                     Console.WriteLine("no es bisiesto {0} \n", variables.dato1);
                 }
             }
-            catch (FormatException)
+            catch (Exception)
             {
+                Console.WriteLine("Ingrese un valor correcto");
             }
         }
     }

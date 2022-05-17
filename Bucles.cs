@@ -23,7 +23,6 @@ namespace LA_MISCELANEA_C
 
                 ElecBu = Convert.ToInt32(Console.ReadLine());
 
-
                 switch (ElecBu)
                 {
                     case 1:
@@ -56,7 +55,6 @@ namespace LA_MISCELANEA_C
                         }
                         break;
                 }
-
             } while (ElecBu != 9);
 
             Console.ReadKey();
@@ -102,7 +100,6 @@ namespace LA_MISCELANEA_C
                 Console.WriteLine("\nCuadrado del " + variables.dato1 + " : " + (variables.dato1 * variables.dato1));
             }
         }
-
         public void Ciclo5()
         {
             variables.dato1 = 0;
@@ -162,6 +159,5 @@ namespace LA_MISCELANEA_C
                 Console.WriteLine("El caracter ingresado es erroneo");
             }
         }
-
     }
 }
